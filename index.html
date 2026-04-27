@@ -11,8 +11,13 @@
 <style>
     body {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        line-height: 1.6;
+        line-height: 1.5;
+        color: #444;
         padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+
     }
 
     html {
@@ -22,9 +27,12 @@
 
     section {
         height: auto;
-        padding-top: auto;
-        border-bottom: 1px solid #ffffff;
+        margin-top: 0px;
+        padding-bottom: 5px;
+        border-top: solid 1px gray;
+       
     }
+
 
     .voltar{
         text-decoration: none;
@@ -53,7 +61,7 @@
     }
 
     h1{
-         color: rgb(3, 18, 73);
+         color: rgb(3, 18, 73); /*nao coloque a cor que fala no trabalho porque nao combinou*/
     }
 
     h2{
@@ -79,6 +87,17 @@
         list-style-type: decimal;
     }
 
+    main{
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+    }
+
+    .con img{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+    }
+
 </style>
 
 
@@ -94,6 +113,7 @@
 
     </nav>
 
+    <main>
     <div class="foto">
         <section id="foto">
             <img id="TB" src="https://i.pinimg.com/236x/26/7e/e8/267ee8b1b3b647d4cd0401b14c03eb30.jpg">
@@ -182,10 +202,33 @@
     <div>
         <section id="contato">
             <h2>Contato</h2>
-            <p>Aqui terminamos o nosso teste de âncoras HTML.</p>
+            
+        <div class="con">
+            <div class="localizacao">
+            <img id="mar" src="https://png.pngtree.com/png-vector/20250806/ourmid/pngtree-original-element-cartoon-hand-drawn-blue-wave-png-png-image_17030275.webp">
+           <a class="loca" href="https://www.google.com/maps/place/Golfo+da+Calif%C3%B3rnia/@26.7312935,-110.7122465,6z/data=!4m15!1m8!3m7!1s0x86cbcc2e363e4c59:0xd366a88891d18a70!2sGolfo+da+Calif%C3%B3rnia!8m2!3d26.7312935!4d-110.7122465!10e5!16zL20vMDEyZHdo!3m5!1s0x86cbcc2e363e4c59:0xd366a88891d18a70!8m2!3d26.7312935!4d-110.7122465!16zL20vMDEyZHdo?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Fundo do Mar.</a>
+            </div>
+
+            <div class="telefone">
+             <img id="concha" src="https://png.pngtree.com/png-vector/20250401/ourmid/pngtree-conch-shell-png-image_15922664.png">
+           <a class="fone" href="tel:+18580019991">+1 (858) 001 - 9991</a>
+           <!--mesma coisa que o email, mas funciona melhor no celular, no pc precisa de aplicativo de chamadas configurado para funcionar-->
+
+            </div>
+
+            <div class="email">
+            <img id="e" src="https://png.pngtree.com/png-vector/20240129/ourmid/pngtree-starfish-blue-color-png-illustration-marine-life-png-image_11512637.png">
+           <a class="ema" href="mailto:gigantegentil@marazul.com">gigantegentil@marazul.com</a>
+           <!--o link vai para o login de email, porque o email é ficticio-->
+
+            </div>
+        </div>
+           
+            <p></p>
            <a class="voltar" href="#foto">Voltar ao topo ↑</a>
         </section>
     </div>
+    </main>
 
 </body>
 
